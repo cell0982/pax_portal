@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAX Detector Test</title>
+    <style>
+        @font-face {
+            font-family: 'SpecialFont';
+            src: url('SpecialFont.ttf') format('truetype');
+        }
+        body {
+            margin: 0;
+            font-family: 'SpecialFont', Arial, sans-serif;
+            background-image: url('tes.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px);
+        }
+        .square {
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.7);
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>PAX Detector Test Subcategories</h1>
+    </div>
+    <div class="container">
+        <div class="square" onclick="window.location.href='detector_test_sub1.html'">
+            <span>Subcategory 1</span>
+        </div>
+        <div class="square" onclick="window.location.href='detector_test_sub2.html'">
+            <span>Subcategory 2</span>
+        </div>
+        <div class="square" onclick="window.location.href='detector_test_sub3.html'">
+            <span>Subcategory 3</span>
+        </div>
+        <div class="square" onclick="window.location.href='detector_test_sub4.html'">
+            <span>Subcategory 4</span>
+        </div>
+        <div class="square" onclick="window.location.href='detector_test_sub5.html'">
+            <span>Subcategory 5</span>
+        </div>
+    </div>
+</body>
+</html>
