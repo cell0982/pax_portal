@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAX Portal</title>
+    <style>
+        @font-face {
+            font-family: 'SpecialFont';
+            src: url('SpecialFont.ttf') format('truetype');
+        }
+        body {
+            margin: 0;
+            font-family: 'SpecialFont', Arial, sans-serif;
+            background-image: url('background.jpeg'); /* Add your main background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .header img {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 50px;
+            height: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px);
+        }
+        .square {
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.7);
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+        }
+        .square:hover .subcategories {
+            display: block;
+        }
+        .subcategories {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 200px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .subcategories a {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>PAX Portal</h1>
+        <img src="pax_logo.png" alt="PAX Logo">
+    </div>
+    <div class="container">
+        <div class="square" onclick="window.location.href='detector_test.html'">
+            <span>PAX Detector Test</span>
+            <div class="subcategories">
+                <a href="detector_test_sub1.html">Subcategory 1</a>
+                <a href="detector_test_sub2.html">Subcategory 2</a>
+                <a href="detector_test_sub3.html">Subcategory 3</a>
+                <a href="detector_test_sub4.html">Subcategory 4</a>
+                <a href="detector_test_sub5.html">Subcategory 5</a>
+            </div>
+        </div>
+        <div class="square" onclick="window.location.href='pbar_trap.html'">
+            <span>Pbar Trap Simulation</span>
+        </div>
+        <div class="square" onclick="window.location.href='team_tasks.html'">
+            <span>Team Tasks</span>
+        </div>
+    </div>
+</body>
+</html>
